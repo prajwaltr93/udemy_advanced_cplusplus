@@ -29,7 +29,7 @@ int main() {
     // catch (customException &e) {
     //     cout << e.what() <<endl;
     // }
-    catch (exception e) { // private inheritance dis allows derived to base class conversion
+    catch (exception e) { // private inheritance does not allow derived to base class conversion
         cout << "Base handling derived exception" << endl;
         cout << e.what() <<endl;
     }
