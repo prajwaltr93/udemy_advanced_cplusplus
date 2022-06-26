@@ -1,0 +1,24 @@
+BookmarkBegin
+BookmarkTitle: C++ Primer, Fifth Edition
+BookmarkLevel: 1
+BookmarkPageNumber: 1
+BookmarkBegin
+BookmarkTitle: Contents
+BookmarkLevel: 2
+BookmarkPageNumber: 4
+BookmarkBegin
+BookmarkTitle: Preface
+BookmarkLevel: 2
+BookmarkPageNumber: 21
+BookmarkBegin
+BookmarkTitle: Chapter 1. Getting Started
+BookmarkLevel: 2
+BookmarkPageNumber: 25
+BookmarkBegin
+BookmarkTitle: 1.1. Writing a Simple C++ Program
+BookmarkLevel: 3
+BookmarkPageNumber: 27
+BookmarkBegin
+BookmarkTitle: 1.2. A First Look at Input/Output
+BookmarkLevel: 3
+BookmarkPageNumber: 30
