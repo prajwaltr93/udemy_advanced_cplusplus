@@ -16,6 +16,12 @@ int main() {
     for(int i=0; i<store.get_size(); i++) {
         cout<< store.get(i) << endl;
     }
+    for(ring<int>::iterator it = store.begin(); it != store.end(); it++) {
+        cout<< *it << endl;
+    }
+    for(auto x : store) {
+        cout<< x << endl;
+    }
 
     return 0;
 }
