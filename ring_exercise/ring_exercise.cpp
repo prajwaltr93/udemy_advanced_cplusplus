@@ -23,5 +23,11 @@ int main() {
         cout<< x << endl;
     }
 
+    cout << "Using Initializer list to create object" << endl;
+    ring<int> store1({1,2,3,4,5,6,7,8,9}, 3);
+
+    for(auto x : store1) {
+        cout<< x << endl;
+    }
     return 0;
 }

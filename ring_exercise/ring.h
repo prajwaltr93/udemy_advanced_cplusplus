@@ -1,4 +1,6 @@
 // template has to defined in headers, only exception
+#include<initializer_list>
+
 template <class t>
 class ring {
     private:
@@ -11,6 +13,15 @@ class ring {
     public:
         ring(int i) : size(i), store(NULL), pos(0) {
             store = new t[size];
+        }
+        
+        ring(std::initializer_list<int> init_list, int size) {
+            size = init_list.size();
+            pos = 0;
+            store = new t[size];
+            for(auto temp : init_list) {
+                this->add(temp);
+            }
         }
         
         ~ring() {
