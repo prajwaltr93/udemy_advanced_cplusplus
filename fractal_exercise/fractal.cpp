@@ -15,10 +15,9 @@ int main() {
 
 	bitmap bitmap_obj(WIDTH, HEIGHT);
 
-	RGB rgb(3, 4, 5);
-	RGB rgb2(1, 2, 3);
-
-	RGB rgb3 = rgb - rgb2;
+	RGB startColor(0, 0, 20);
+	RGB endColor(255, 128, 74);
+	RGB colorDiff = endColor - startColor;
 
 	int *histogram = new int[Mandelbrot::MAX_ITERATIONS]{0}; // all index set to 0, count = 0
 	int *fractal = new int[WIDTH * HEIGHT]{0}; // all index set to 0, count = 0
@@ -26,9 +25,8 @@ int main() {
 	ZoomList zoomList(WIDTH, HEIGHT);
 
 	zoomList.add(Zoom(WIDTH / 2, HEIGHT / 2, 4.0 / WIDTH));
-	zoomList.add(Zoom(295, HEIGHT - 202, 0.1));
-	zoomList.add(Zoom(312, HEIGHT - 304, 0.1));
-	zoomList.add(Zoom(312, HEIGHT - 304, 0.1));
+	// zoomList.add(Zoom(295, HEIGHT - 202, 0.1));
+	// zoomList.add(Zoom(312, HEIGHT - 304, 0.1));
 
 	for (int y = 0; y < HEIGHT; y++) {
 		for (int x = 0; x < WIDTH; x++) {
@@ -64,7 +62,9 @@ int main() {
 				for (int i = 0; i <= iterations; i++) {
 					hue += ((double) histogram[i]) / total;
 					
-					green = pow(255, hue);
+					red = startColor.r + colorDiff.r*hue;
+					green = startColor.g + colorDiff.g*hue;
+					blue = startColor.b + colorDiff.b*hue;
 
 					bitmap_obj.set_pixel(x, y, red, green, blue);
 				}
