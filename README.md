@@ -6,12 +6,12 @@ and this ...
 
 #### Fractal Zoomed Out
 
-![Fractal Image Zoomed Out] (./fractal_exercise/image_zoomed_out.bmp)
+![Fractal Image Zoomed Out](./fractal_exercise/image_zoomed_out.bmp)
 
-#### Fractal Zoomed Out
+#### Fractal 1X Zoom 
 
-![Fractal Image Zoomed Out] (./fractal_exercise/image_zoomed_out.bmp)
+![Fractal Image Zoomed Out](./fractal_exercise/image_1x_zoom.bmp)
 
-#### Fractal Zoomed Out
+#### Fractal 2X Zoom
 
-![Fractal Image Zoomed Out] (./fractal_exercise/image_zoomed_out.bmp)
+![Fractal Image Zoomed Out](./fractal_exercise/image_2x_zoom.bmp)
