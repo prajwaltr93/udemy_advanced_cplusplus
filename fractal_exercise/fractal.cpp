@@ -3,6 +3,7 @@
 #include "mandelbrot.h"
 #include <math.h>
 #include "zoomlist.h"
+#include "RGB.h"
 
 using namespace std;
 
@@ -14,8 +15,10 @@ int main() {
 
 	bitmap bitmap_obj(WIDTH, HEIGHT);
 
-	double min = 999999;
-	double max = -999999;
+	RGB rgb(3, 4, 5);
+	RGB rgb2(1, 2, 3);
+
+	RGB rgb3 = rgb - rgb2;
 
 	int *histogram = new int[Mandelbrot::MAX_ITERATIONS]{0}; // all index set to 0, count = 0
 	int *fractal = new int[WIDTH * HEIGHT]{0}; // all index set to 0, count = 0
